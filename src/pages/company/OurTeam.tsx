@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
 
 const leadership = [
-  { name: "Alexander Voronov", role: "Chief Executive Officer", bio: "20+ years in enterprise technology leadership. Previously led digital transformation at two Fortune 100 companies.", initials: "AV" },
-  { name: "Priya Sharma", role: "Chief Technology Officer", bio: "Former VP Engineering at a Fortune 100 company. Expert in distributed systems and cloud architecture.", initials: "PS" },
-  { name: "James Mitchell", role: "Chief Operating Officer", bio: "Scaled operations across 30+ countries. MBA from Wharton with deep expertise in global delivery.", initials: "JM" },
-  { name: "Dr. Lin Wei", role: "VP of AI & Data", bio: "PhD in Machine Learning from MIT. 50+ published papers and 12 patents in artificial intelligence.", initials: "LW" },
-  { name: "Maria Santos", role: "VP of Client Services", bio: "15 years in enterprise client management. Trusted advisor to C-suite leaders across industries.", initials: "MS" },
-  { name: "David Park", role: "VP of Engineering", bio: "Led teams of 500+ engineers globally. Architect behind platforms processing 10M+ daily transactions.", initials: "DP" },
+  { name: "Alexander Voronov", role: "Chief Executive Officer", bio: "20+ years in enterprise technology leadership. Previously led digital transformation at two Fortune 100 companies.", initials: "AV", image: "/src/assets/Photo/1774532499156_1774532499155-blob.jpg", bgImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" },
+  { name: "Priya Sharma", role: "Chief Technology Officer", bio: "Former VP Engineering at a Fortune 100 company. Expert in distributed systems and cloud architecture.", initials: "PS", image: "/src/assets/Photo/1774545787592_1774545787592-blob.jpg", bgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop" },
+  { name: "James Mitchell", role: "Chief Operating Officer", bio: "Scaled operations across 30+ countries. MBA from Wharton with deep expertise in global delivery.", initials: "JM", image: "/src/assets/Photo/1774672476924_1774672476923-blob.jpg", bgImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop" },
+  { name: "Dr. Lin Wei", role: "VP of AI & Data", bio: "PhD in Machine Learning from MIT. 50+ published papers and 12 patents in artificial intelligence.", initials: "LW", image: "/src/assets/Photo/1774678366817_1774678366816-blob.jpg", bgImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop" },
+  { name: "Maria Santos", role: "VP of Client Services", bio: "15 years in enterprise client management. Trusted advisor to C-suite leaders across industries.", initials: "MS", image: "/src/assets/Photo/1774698280519_1774698280518-blob.jpg", bgImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop" },
+  { name: "David Park", role: "VP of Engineering", bio: "Led teams of 500+ engineers globally. Architect behind platforms processing 10M+ daily transactions.", initials: "DP", image: "/src/assets/Photo/1774716054525_1774716054525-blob.jpg", bgImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop" },
 ];
 
 const departments = [
@@ -56,20 +56,21 @@ const OurTeam = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {leadership.map((person, i) => (
               <ScrollReveal key={person.name} delay={i * 0.1}>
-                <div className="service-card text-center group">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center font-heading font-bold text-2xl transition-all duration-300 group-hover:scale-110" style={{ background: "hsl(var(--indigo) / 0.08)", color: "hsl(var(--indigo))" }}>
-                    {person.initials}
+                <div className="relative rounded-3xl p-8 text-center group overflow-hidden" style={{ background: "hsl(220 20% 92%)", border: "1px solid hsl(220 20% 85%)" }}>
+                  <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden transition-all duration-300 group-hover:scale-105 ring-4 ring-indigo-200">
+                    <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="font-heading font-semibold text-lg text-foreground">{person.name}</h3>
-                  <p className="text-sm font-medium text-primary mb-3">{person.role}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{person.bio}</p>
-                  <div className="flex items-center justify-center gap-3">
-                    <span className="w-8 h-8 rounded-full flex items-center justify-center transition-colors" style={{ background: "hsl(var(--indigo) / 0.08)" }}>
-                      <Linkedin size={14} className="text-primary" />
-                    </span>
-                    <span className="w-8 h-8 rounded-full flex items-center justify-center transition-colors" style={{ background: "hsl(var(--indigo) / 0.08)" }}>
-                      <Mail size={14} className="text-primary" />
-                    </span>
+                  <h3 className="font-heading font-bold text-2xl mb-3" style={{ color: "hsl(220 30% 15%)" }}>{person.name}</h3>
+                  <p className="text-base mb-8" style={{ color: "hsl(220 15% 40%)" }}>{person.bio}</p>
+                  <div className="flex items-center justify-center gap-4">
+                    <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:opacity-80" style={{ background: "transparent", border: "1px solid hsl(220 20% 75%)", color: "hsl(220 30% 20%)" }}>
+                      <Mail size={16} />
+                      Message
+                    </button>
+                    <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:opacity-90" style={{ background: "hsl(var(--indigo))", color: "hsl(0 0% 100%)" }}>
+                      <Linkedin size={16} />
+                      Connect
+                    </button>
                   </div>
                 </div>
               </ScrollReveal>

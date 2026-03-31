@@ -1,22 +1,24 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
-import { ArrowRight, Heart, Zap, Globe, Coffee, Dumbbell, BookOpen, PartyPopper, Users } from "lucide-react";
+import { ArrowRight, Heart, Globe, Coffee, Dumbbell, BookOpen, PartyPopper, Users, Sparkles, Clock, Rocket, Brain, Shield, Palette } from "lucide-react";
 
 const perks = [
-  { icon: Globe, title: "Remote-First Culture", desc: "Work from anywhere — our teams span 30+ countries with flexible schedules." },
-  { icon: BookOpen, title: "Learning Budget", desc: "$5,000 annual learning stipend for courses, conferences, and certifications." },
-  { icon: Dumbbell, title: "Wellness Program", desc: "Gym memberships, mental health support, and wellness days every quarter." },
-  { icon: Coffee, title: "Team Retreats", desc: "Annual all-company offsite and quarterly team meetups worldwide." },
-  { icon: PartyPopper, title: "Hackathons", desc: "Quarterly innovation sprints where any idea can become a real product." },
-  { icon: Heart, title: "Parental Leave", desc: "26 weeks paid parental leave for all parents, regardless of gender." },
+  { icon: Globe, title: "Remote-First Culture", desc: "Work from anywhere — our teams span 30+ countries with flexible schedules.", color: "hsl(var(--cyan))" },
+  { icon: BookOpen, title: "Learning Budget", desc: "$5,000 annual learning stipend for courses, conferences, and certifications.", color: "hsl(var(--indigo))" },
+  { icon: Dumbbell, title: "Wellness Program", desc: "Gym memberships, mental health support, and wellness days every quarter.", color: "hsl(var(--accent))" },
+  { icon: Coffee, title: "Team Retreats", desc: "Annual all-company offsite and quarterly team meetups worldwide.", color: "hsl(var(--cyan))" },
+  { icon: PartyPopper, title: "Hackathons", desc: "Quarterly innovation sprints where any idea can become a real product.", color: "hsl(var(--indigo))" },
+  { icon: Heart, title: "Parental Leave", desc: "26 weeks paid parental leave for all parents, regardless of gender.", color: "hsl(var(--accent))" },
 ];
 
 const cultureValues = [
-  { emoji: "🚀", title: "Ship with Purpose", desc: "We build solutions that matter for millions of users." },
-  { emoji: "🤝", title: "Radical Transparency", desc: "Open salaries, open roadmaps, open conversations." },
-  { emoji: "🧠", title: "Growth Mindset", desc: "Failure is a teacher. We celebrate experiments." },
-  { emoji: "🌍", title: "Diversity & Belonging", desc: "50+ nationalities. Everyone has a voice and a seat at the table." },
+  { title: "Ship with Purpose", desc: "We build solutions that matter for millions of users." },
+  { title: "Radical Transparency", desc: "Open salaries, open roadmaps, open conversations." },
+  { title: "Growth Mindset", desc: "Failure is a teacher. We celebrate experiments." },
+  { title: "Diversity & Belonging", desc: "50+ nationalities. Everyone has a voice and a seat at the table." },
+//  { emoji: "🌍", title: "Diversity & Belonging", desc: "50+ nationalities. Everyone has a voice and a seat at the table." },
+
 ];
 
 const LifeAtNexaTech = () => {

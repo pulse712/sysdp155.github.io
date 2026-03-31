@@ -13,7 +13,7 @@ const newsArticles = [
     author: "NexaTech Communications",
     date: "March 31, 2026",
     readTime: "4 min read",
-    image: "/src/assets/service-cloud-devops.jpg",
+    image: "/src/assets/blogs/1.JPG",
     featured: true,
   },
   {
@@ -24,7 +24,7 @@ const newsArticles = [
     author: "NexaTech Communications",
     date: "March 15, 2026",
     readTime: "5 min read",
-    image: "/src/assets/data-center.jpg",
+    image: "/src/assets/blogs/2.JPG",
     featured: true,
   },
   {
@@ -35,7 +35,7 @@ const newsArticles = [
     author: "NexaTech Communications",
     date: "February 28, 2026",
     readTime: "3 min read",
-    image: "/src/assets/business-meeting.jpg",
+    image: "/src/assets/blogs/1.JPG",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const newsArticles = [
     author: "NexaTech HR",
     date: "January 20, 2026",
     readTime: "3 min read",
-    image: "/src/assets/hero-office.jpg",
+    image: "/src/assets/blogs/2.JPG",
   },
   {
     id: 5,
@@ -85,7 +85,7 @@ const newsArticles = [
     author: "NexaTech Events",
     date: "September 18, 2025",
     readTime: "3 min read",
-    image: "/src/assets/global-map.jpg",
+    image: "/src/assets/blogs/3.JPG",
   },
   {
     id: 9,
@@ -135,7 +135,7 @@ const newsArticles = [
     author: "NexaTech Operations",
     date: "April 10, 2025",
     readTime: "4 min read",
-    image: "/src/assets/tech-abstract.jpg",
+    image: "/src/assets/blogs/4.JPG",
   },
   {
     id: 14,
@@ -145,7 +145,7 @@ const newsArticles = [
     author: "NexaTech Communications",
     date: "March 5, 2025",
     readTime: "3 min read",
-    image: "/src/assets/business-meeting.jpg",
+    image: "/src/assets/blogs/5.JPG",
   },
   {
     id: 15,
@@ -165,7 +165,7 @@ const newsArticles = [
     author: "NexaTech Foundation",
     date: "January 18, 2025",
     readTime: "3 min read",
-    image: "/src/assets/industry-education.jpg",
+    image: "/src/assets/blogs/6.JPG",
   },
   {
     id: 17,
@@ -185,7 +185,7 @@ const newsArticles = [
     author: "NexaTech Operations",
     date: "November 15, 2024",
     readTime: "3 min read",
-    image: "/src/assets/hero-office.jpg",
+    image: "/src/assets/blogs/7.JPG",
   },
   {
     id: 19,
@@ -205,7 +205,7 @@ const newsArticles = [
     author: "NexaTech Operations",
     date: "November 5, 2025",
     readTime: "4 min read",
-    image: "/src/assets/global-map.jpg",
+    image: "/src/assets/blogs/8.JPG",
   },
   {
     id: 21,
@@ -225,7 +225,7 @@ const newsArticles = [
     author: "NexaTech Communications",
     date: "July 18, 2024",
     readTime: "3 min read",
-    image: "/src/assets/business-meeting.jpg",
+    image: "/src/assets/blogs/9.JPG",
   },
   {
     id: 23,
@@ -245,7 +245,7 @@ const newsArticles = [
     author: "NexaTech Sustainability",
     date: "May 8, 2024",
     readTime: "4 min read",
-    image: "/src/assets/data-center.jpg",
+    image: "/src/assets/blogs/10.JPG",
   },
   {
     id: 25,
@@ -265,7 +265,7 @@ const newsArticles = [
     author: "NexaTech Research",
     date: "March 20, 2024",
     readTime: "4 min read",
-    image: "/src/assets/service-ai-ml.jpg",
+    image: "/src/assets/blogs/11.JPG",
   },
   {
     id: 27,
@@ -285,7 +285,7 @@ const newsArticles = [
     author: "NexaTech Foundation",
     date: "January 5, 2024",
     readTime: "3 min read",
-    image: "/src/assets/hero-office.jpg",
+    image: "/src/assets/blogs/12.JPG",
   },
   {
     id: 29,
@@ -295,7 +295,7 @@ const newsArticles = [
     author: "NexaTech HR",
     date: "December 12, 2023",
     readTime: "3 min read",
-    image: "/src/assets/business-meeting.jpg",
+    image: "/src/assets/blogs/13.JPG",
   },
   {
     id: 30,
@@ -325,7 +325,7 @@ const newsArticles = [
     author: "NexaTech Client Services",
     date: "September 5, 2021",
     readTime: "3 min read",
-    image: "/src/assets/business-meeting.jpg",
+    image: "/src/assets/blogs/14.JPG",
   },
   {
     id: 33,
@@ -335,7 +335,7 @@ const newsArticles = [
     author: "NexaTech Operations",
     date: "July 20, 2020",
     readTime: "4 min read",
-    image: "/src/assets/tech-abstract.jpg",
+    image: "/src/assets/blogs/15.JPG",
   },
   {
     id: 34,
@@ -345,7 +345,7 @@ const newsArticles = [
     author: "NexaTech Research",
     date: "May 10, 2018",
     readTime: "4 min read",
-    image: "/src/assets/service-ai-ml.jpg",
+    image: "/src/assets/blogs/16.JPG",
   },
   {
     id: 35,
